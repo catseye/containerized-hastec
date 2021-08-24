@@ -1,9 +1,10 @@
 containerized-hastec
 ====================
 
-Run the Haste compiler `hastec` almost as if you had it installed locally.
+Run the [Haste](https://haste-lang.org/) compiler `hastec` almost as if you had it installed locally.
 
-Several of my language projects use `hastec`.  But as of this writing, `hastec`
+Several of [Cat's Eye Technologies'](https://catseye.tc/) language projects
+use `hastec`.  But as of this writing, `hastec`
 [only works with GHC 7.10](https://github.com/valderman/haste-compiler/issues/428),
 and trying to install GHC 7.10 on modern OSes is, shall we say, burdensome.
 
@@ -19,7 +20,9 @@ with some additions:
 *   Install Docker and add your user to the `docker` group.
 *   Put the `bin` directory in this repository on your executable `PATH`.
 *   Run `hastec --help`.  This will cause the image to be downloaded from
-    Docker Hub.
+    [catseye/containerized-hastec](https://github.com/catseye/containerized-hastec)
+    on Docker Hub.
+*   You can now run `hastec` almost as if it was installed locally.
 
 If you want to build the image yourself instead of downloading the one
 on Docker Hub, in the root directory of this repository, run `./build.sh`.
