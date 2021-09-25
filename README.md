@@ -1,6 +1,11 @@
 containerized-hastec
 ====================
 
+Experimental
+| _See also:_ [The Cannery](https://github.com/catseye/The-Cannery)
+
+- - - -
+
 Run the [Haste](https://haste-lang.org/) compiler `hastec` almost as if you had it installed locally.
 
 Several of [Cat's Eye Technologies'](https://catseye.tc/) language projects
@@ -20,7 +25,7 @@ with some additions:
 *   Install Docker and add your user to the `docker` group.
 *   Put the `bin` directory in this repository on your executable `PATH`.
 *   Run `hastec --help`.  This will cause the image to be downloaded from
-    [catseye/containerized-hastec](https://github.com/catseye/containerized-hastec)
+    [catseye/hastec](https://hub.docker.com/repository/docker/catseye/hastec)
     on Docker Hub.
 *   You can now run `hastec` almost as if it was installed locally.
 
@@ -41,7 +46,7 @@ JavaScript file to `../built/out.js` because it can't see `../`.
 
 Also, the Docker daemon always runs as root.  The script tells the
 container to be run as the current user on the host.  This prevents
-the files that `hastec` write from being owned by root.  But this
+the files that `hastec` writes from being owned by root.  But this
 directive is not total; the Docker daemon still runs as root.
 For that reason I would recommend not running the script from a
 directory that contains anything important, such as `/`.
