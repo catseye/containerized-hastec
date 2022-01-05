@@ -1,8 +1,8 @@
 containerized-hastec
 ====================
 
-Experimental
-| _See also:_ [The Cannery](https://github.com/catseye/The-Cannery)
+**DEPRECATED**: this project has moved into [The Cannery](https://github.com/catseye/The-Cannery) and is
+available on Docker hub as [catseye/x-hastec](https://hub.docker.com/r/catseye/x-hastec).
 
 - - - -
 
